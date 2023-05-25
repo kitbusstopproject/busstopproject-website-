@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.content_jpg{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 40px;
+    left: 0;
+}
+.content_line{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #E97575;
+}
+.content_logo{
+    position: absolute;
+    width: 200px;
+    height: 148px;
+    top: 18px;
+    border-radius: 284.5px;
+}
+.content_word{
+    position: absolute;
+    width: 1720px;
+    height: 251px;
+    left: 75px;
+    top: 150px;
+
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 213px;
+
+    color: #ffffff;
+}
