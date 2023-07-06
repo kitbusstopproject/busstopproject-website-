@@ -1,40 +1,134 @@
 @charset "UTF-8";
 
-.content_jpg{
-    position: relative;
-    width: 100%;
-    height: 400px;
-    top: 40px;
-    left: 0;
+*{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.content_line{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0px;
-    top: 0px;
 
-    background: #E97575;
+
+.content_jpg{ /*ヘッダーの写真*/
+  position: relative;
+  width: 100%;
+  height: 400px;
+  left: 0px;
 }
-.content_logo{
-    position: absolute;
-    width: 200px;
-    height: 148px;
-    top: 18px;
-    border-radius: 284.5px;
+.content_line{ /*上部タグ部分*/
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background: #E97575;
 }
-.content_word{
-    position: absolute;
-    width: 1720px;
-    height: 251px;
-    left: 75px;
-    top: 150px;
+.content_logo{ /*のっティのロゴ*/
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 18px;
+  left: 18px;
+  border-radius: 100px;
+  object-fit: cover; 
+}
+.content_word{ /*上部bus stop*/
+  position: absolute;
+  width: 90%;
+  height: 251px;
+  left: 75px;
+  top: 150px;
 
-    font-family: 'Michroma';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 213px;
+  font-family: 'impact';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 213px;
 
-    color: #ffffff;
+  color: #ffffff;
+}
+
+
+.text_z{ /*ICTを活用した...*/
+  padding: 30px;
+
+  font-family: 'IM FELL French Canon';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #EA4E43;
+}
+.text_a{ /*ののいちの市民サポート...*/
+  width: 99%;
+
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+
+  color: #000000;
+}
+
+
+.flex { /*サイトに勧める*/
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.flex img { /*のっティ画像*/
+  text-align: center;
+  max-width: 500px;
+  overflow:hidden;
+}
+.flex .right { /*右部分　設定*/
+  margin: 0 0 0 30;
+  padding: 0;
+}
+.flex .title { /*右　のっティバスどこは...*/
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex .text {/*のっティ　リンク*/
+  margin: 75% 0 0;
+  padding: 0;
+}
+
+
+.fin{ /*紹介全体定義*/
+  display:flex;
+}
+.fin img{ /*紹介内容　画像*/
+  max-width: 500px;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  position:relative;
+}
+.fin .right{ /*紹介内容　文字定義*/
+  margin:0 0 0;
+  padding: 0;
+}
+.fin .title{ /**/
+  margin:0;
+  padding:0;
+  font-weight:bold;
+  font-size:30px;
+}
+.fin .text{
+  top: 100px;
+  margin:0 0 0;
+  padding: 0;
+  font-weight: 900;
+  line-height: 3;
+  letter-spacing: 1;
+}
+.fotter_line{ 
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: #E97575;
 }
