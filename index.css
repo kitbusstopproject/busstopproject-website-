@@ -126,9 +126,28 @@
   letter-spacing: 1;
 }
 .fotter_line{ 
+  position: relative;
   width: 100%;
   height: 100px;
   left: 0px;
   top: 0px;
   background: #E97575;
+}
+.fotter_word{
+  position: absolute;
+  width: 90%;
+  left:1050 ;
+  bottom: 0;
+ 
+
+  font-family: 'impact';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #ffffff;
+}
+.c{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30;
 }
