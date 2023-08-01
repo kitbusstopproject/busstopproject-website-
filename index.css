@@ -48,7 +48,7 @@
 }
 
 
-.text_z{ /*ICTを活用した...*/
+.headline_a{ /*ICTを活用した...*/
   padding: 30px;
 
   font-family: 'IM FELL French Canon';
@@ -60,7 +60,7 @@
 
   color: #EA4E43;
 }
-.text_a{ /*ののいちの市民サポート...*/
+.headline_b{ /*ののいちの市民サポート...*/
   width: 99%;
 
   padding: 0;
@@ -97,27 +97,27 @@
 }
 
 
-.fin{ /*紹介全体定義*/
+.main{ /*紹介全体定義*/
   display:flex;
 }
-.fin img{ /*紹介内容　画像*/
+.main img{ /*紹介内容　画像*/
   max-width: 500px;
   margin:0;
   padding:0;
   overflow:hidden;
   position:relative;
 }
-.fin .right{ /*紹介内容　文字定義*/
+.main .right{ /*紹介内容　文字定義*/
   margin:0 0 0;
   padding: 0;
 }
-.fin .title{ /**/
+.main .title{ /**/
   margin:0;
   padding:0;
   font-weight:bold;
   font-size:30px;
 }
-.fin .text{
+.main .text{
   top: 100px;
   margin:0 0 0;
   padding: 0;
@@ -128,15 +128,16 @@
 .fotter_line{ 
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 80px;
   left: 0px;
   top: 0px;
   background: #E97575;
 }
 .fotter_word{
   position: absolute;
-  width: 90%;
-  left:1050 ;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  right: 0;
   bottom: 0;
  
 
@@ -146,7 +147,7 @@
   font-size: 50px;
   color: #ffffff;
 }
-.c{
+.form{
   font-size: 30px;
   font-weight: bold;
   margin: 30;
