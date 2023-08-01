@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+  background-image: url("bus-central.png");
+}
 
 *{
   font-family: 'Noto Sans JP', sans-serif;
@@ -115,15 +118,35 @@
   margin:0;
   padding:0;
   font-weight:bold;
-  font-size:30px;
+  font-size:40px;
+  text-decoration: underline;
 }
 .main .text{
-  top: 100px;
+  top: 200px;
   margin:0 0 0;
   padding: 0;
-  font-weight: 900;
-  line-height: 3;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
   letter-spacing: 1;
+}
+.day{
+  font-size:40px;
+  font-weight:bold;
+  margin:30;
+  text-align:center;
+}
+.week{/*活動時間*/
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30;
+  text-align: center;
+}
+.form{
+  font-size:30px;
+  font-weight:bold;
+  margin:10;
+  text-align:center;
 }
 .fotter_line{ 
   position: relative;
