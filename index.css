@@ -79,7 +79,7 @@
 }
 .flex img { /*のっティ画像*/
   text-align: center;
-  max-width: 500px;
+  max-width: 700%;
   overflow:hidden;
 }
 .flex .right { /*右部分　設定*/
