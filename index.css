@@ -4,9 +4,11 @@
 *{
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
-  padding: 0;
 }
 
+.layout{
+  margin: 0 10% 0 10%;
+}
 
 .content_jpg{ /*ヘッダーの写真*/
   position: relative;
@@ -117,7 +119,7 @@
   padding:0;
   font-weight:bold;
   font-size:40px;
-  text-decoration: underline;
+  color: mediumvioletred;
 }
 .main .text{
   top: 200px;
@@ -133,6 +135,7 @@
   font-weight:bold;
   margin:30;
   text-align:center;
+  color: mediumvioletred;
 }
 .week{/*活動時間*/
   font-size: 30px;
@@ -175,6 +178,9 @@
   font-size: 40px;
   font-weight: bold;
   margin: 30;
+}
+.form .in_sentence{
+  width: 60px;
 }
 /* 画面全体の設定 */
 #loader_wrap {
