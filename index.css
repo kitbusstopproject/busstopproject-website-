@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 1026px) {
   html {
-      font-size: 75%;
+      font-size:40% ;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1025px) {
   html {
-      font-size: 62.5%;
+      font-size: 25%;
   }
 }
 *{
@@ -20,52 +20,52 @@
 .content_jpg{ /*ヘッダーの写真*/
   position: relative;
   width: 100%;
-  height: 400px;
-  left: 0px;
+  height: 60rem;
+  left: 0rem;
 }
 .content_line{ /*上部タグ部分*/
   position: absolute;
   width: 100%;
-  height: 100px;
-  left: 0px;
-  top: 0px;
+  height: 10rem;
+  left: 0rem;
+  top: 0rem;
 
   background: #E97575;
 }
 .content_logo{ /*のっティのロゴ*/
   position: absolute;
-  width: 160px;
-  height: 160px;
-  top: 18px;
-  left: 18px;
-  border-radius: 100px;
+  width: 16rem;
+  height: 16rem;
+  top: 1.8rem;
+  left: 1.8rem;
+  border-radius: 10rem;
   object-fit: cover; 
 }
 .content_word{ /*上部bus stop*/
   position: absolute;
   width: 90%;
-  height: 251px;
-  left: 75px;
-  top: 150px;
+  height: 25.1rem;
+  left: 7.5rem;
+  top: 15rem;
 
   font-family: 'impact';
   font-style: normal;
   font-weight: 400;
-  font-size: 100px;
-  line-height: 213px;
+  font-size: 10rem;
+  line-height: 21.3rem;
 
   color: #ffffff;
 }
 
 
 .headline_a{ /*ICTを活用した...*/
-  padding: 30px;
+  padding: 3rem;
 
   font-family: 'IM FELL French Canon';
   font-style: normal;
   font-weight: 100;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 8rem;
+  line-height: 8rem;
   text-align: center;
 
   color: #EA4E43;
@@ -74,7 +74,7 @@
   width: 99%;
 
   padding: 0;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
 
   color: #000000;
@@ -93,13 +93,13 @@
 .flex .right { /*右部分　設定*/
   margin: 0 0 0 10;
   padding: 0;
-  font-size: 30;
+  font-size: 3rem;
 }
 .flex .title { /*右　のっティバスどこは...*/
   margin: 0;
   padding: 0;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3rem;
 }
 .flex .text {/*のっティ　リンク*/
   margin: 75% 0 0;
@@ -111,7 +111,7 @@
   display:flex;
 }
 .main img{ /*紹介内容　画像*/
-  max-width: 400px;
+  max-width: 40rem;
   margin:20;
   padding:0;
   overflow:hidden;
@@ -125,32 +125,32 @@
   margin:0;
   padding:0;
   font-weight:bold;
-  font-size:40px;
+  font-size:4rem;
   text-decoration: underline;
 }
 .main .text{
-  top: 200px;
+  top: 20rem;
   margin:0 0 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 2;
   letter-spacing: 1;
 }
 .day{
-  font-size:40px;
+  font-size:4rem;
   font-weight:bold;
   margin:30;
   text-align:center;
 }
 .week{/*活動時間*/
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: bold;
   margin: 30;
   text-align: center;
 }
 .form{
-  font-size:30px;
+  font-size:3rem;
   font-weight:bold;
   margin:10;
   text-align:center;
@@ -161,15 +161,15 @@
 .fotter_line{ 
   position: relative;
   width: 100%;
-  height: 80px;
-  left: 0px;
-  top: 0px;
+  height: 8rem;
+  left: 0rem;
+  top: 0rem;
   background: #E97575;
 }
 .fotter_word{
   position: absolute;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
   right: 0;
   bottom: 0;
  
@@ -177,11 +177,11 @@
   font-family: 'impact';
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 5rem;
   color: #ffffff;
 }
 .form{
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   margin: 30;
 }
@@ -199,8 +199,8 @@
   }
   /* ローディングアニメーションの設定 */
   .loader {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   background: url("bus-central.png") no-repeat;
   opacity: 0;
   animation: blink 1.5s infinite linear;
