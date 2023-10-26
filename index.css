@@ -76,7 +76,7 @@
   width: 99%;
 
   padding: 0;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 
   color: #000000;
@@ -127,27 +127,27 @@
   margin:0;
   padding:0;
   font-weight:bold;
-  font-size:40px;
+  font-size:7rem;
   text-decoration: underline;
 }
 .main .text{
   top: 20rem;
   margin:0 0 0;
   padding: 0;
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: 500;
   line-height: 2;
   letter-spacing: 1;
 }
 .day{
-  font-size:4rem;
+  font-size:7rem;
   font-weight:bold;
   margin:30;
   text-align:center;
   color: mediumvioletred;
 }
 .week{/*活動時間*/
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: bold;
   margin: 30;
   text-align: center;
