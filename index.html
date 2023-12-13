@@ -6,10 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>busstop project</title>
 </head>
 
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <inside>
             <header>
                 <div><img src="image/hedder.PNG" class="content_jpg">
@@ -31,6 +33,36 @@
                         <p class="title">【のっティバスどこのサイトは<a href="https://nottydoko-demo.sodeproject.com/">こちら</a>!!!】</p>
                     </div>
                 </div>
+                    <div class="row">
+                        <div class ="grid">
+                        <div class="app_line">
+                            <p class = "title">【アプリ開発】</p>
+                        </div>
+                        <div class="web_line">
+                            <figure class = "img"><img class="web-img" src="../portal-site/image/Web_dev_image.png" alt=""></figure>
+                            <p class="title">【Web開発】</p>
+                            <button class="webbotan" type="button">Go!!</button>
+                        </div>
+                        </div>
+                        <div class ="grid2">
+                        <div class="gazou_line">
+                            <p class = "title">
+                                【画像処理】
+                            </p>
+                            <button class="gazoubotan" type="button">Go!!</button>
+                        </div>
+                        <div class="sensa_line">
+                            <p class = "title">【センサネットワーク】</p>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <!--<div class="web">
+                    <div class="web_line">
+                    <figure class = "img"><img class="web-img" src="../portal-site/image/Web_dev_image.png" alt=""></figure>
   
                 <div class="main">
                     <figure class="img"><img src="image/Web_apuri_image.png" alt=""></figure>
@@ -46,27 +78,32 @@
                     <figure class = "img"><img src="image/Web_dev_image.png" alt=""></figure>
                     <div class="right">
                         <p class="title">【Web開発】</p>
-                        <p class="text">　Web班は、交通情報のリアルタイム表示Webページ「のっティバスどこ」の開発・運営を行っています。
-                                    このWebページでは、バスの運行状況をリアルタイムで表示し、待ち時間の短縮や移動の効率化を図ることができます。
-                                    Web班の主な技術スタックは、TypeScript, React, Next.js, Firebaseなどの技術を駆使して、高速かつ使いやすいWebページの開発に取り組んでいます。</p>
+                        <button class="webbotan" type="button">Go!!</button>
                     </div>
                 </div>
+                </div>
+                <div class="gazou">
+                    <div class="gazou_line">
+                    <figure class = "img"><img class="gazou-img" src="../portal-site/image/web_gazo_image.png" alt=""></figure>
                 <div class="main">
                     <figure class = "img"><img src="image/web_gazo_image.png" alt=""></figure>
                     <div class="right">
                         <p class="title">【画像処理】</p>
-                        <p class="text">　画像処理は現在、バスどこのシステムには混雑状況を表示する機能があります。
-                                    こちらは、バスの中にカメラを設置し、取得した画像からバスの乗車人数をカウントしています。
-                                    取得した人数を送信し、バスどこに混雑状況を表示しています。</p>
+                        <button class="gazoubotan" type="button">Go!!</button>
+                    </div>
                     </div>
                 </div>
+                <div class="sensa">
+                    <div class = "sensa_line">
+                    <figure class = "img"><img class="sensa-img"src = "../portal-site/image/web_sensa_image.png" alt=""></figure>
                 <div class="main">
                     <figure class = "img"><img src = "image/web_sensa_image.png" alt=""></figure>
                     <div class="right">
                         <p class="title">【センサネットワーク】</p>
-                        <p class="text">　センサネットワークバスの中には位置情報を取得するための機材を設置しています。
-                                    機材で位置情報を取得し、データをクラウドデータベースに送信することでwebやモバイルアプリでデータを取得することが出来ます。</p>
+                        <button class="sensabotan" type="button">Go!!</button>
                     </div>
+                    </div>
+                </div>
                 </div>
                 <p class="day">【活動日】</p>
                 <p class="week">毎週水曜日　15:00~17:00<br>　　木曜日　17:00~19:00</p>
@@ -83,7 +120,7 @@
                 <h1 class="fotter_word">bus stop project</h1>
             </div>    
         </footer>
-        <!-- <div id="loader_wrap">
+         <div id="loader_wrap">
             <div class="loader"><script>
                 window.onload = function () {
                 const loader_element = document.getElementById('loader_wrap');
