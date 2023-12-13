@@ -112,25 +112,19 @@
 .main{ /*紹介全体定義*/
   display:flex;
 }
-.main img{ /*紹介内容　画像*/
-  max-width: 40rem;
-  margin:20;
-  padding:0;
-  overflow:hidden;
-  position:relative;
-}
-.main .right{ /*紹介内容　文字定義*/
+
+.right{ /*紹介内容　文字定義*/
   margin:0 0 0;
   padding: 0;
 }
-.main .title{ /**/
+.title{ /**/
   margin:0;
   padding:0;
   font-weight:bold;
   font-size:7rem;
   text-decoration: underline;
 }
-.main .text{
+.text{
   top: 20rem;
   margin:0 0 0;
   padding: 0;
@@ -193,7 +187,7 @@
 }
 /* 画面全体の設定 */
 #loader_wrap {
-  position: fixed;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,3 +217,58 @@
   opacity: 0;
   visibility: hidden;
   }
+  .app_line{
+    height: 60rem;
+    background: #E97575aa;
+  }
+  .mobile-img{
+    top:30em;
+    left: 20rem; 
+    width: 40rem;
+    position:absolute;
+  }
+  .web_line{
+    height: 60rem;
+    background:skyblue;
+  }
+.web-img{
+    top:30em;
+    left: 20rem; 
+    width: 40rem;
+    position:absolute;
+}
+.gazou_line{
+    height: 60rem;
+    background:greenyellow;
+    
+}
+.gazou-img{
+    top:30em;
+    left: 20rem; 
+    width: 40rem;
+    position:absolute;
+}
+.sensa_line{
+    height: 60rem;
+    background:purple;
+}
+.sensa-img{
+  top:30em;
+  left: 20rem;
+  width: 40rem;
+  position:absolute;
+}
+.appbotan{
+  te;
+  margin-top:40%;
+  width: 30rem;
+  padding: 5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
