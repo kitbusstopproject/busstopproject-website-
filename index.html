@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet"href="index.css">
+    <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,13 +14,11 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <inside>
-            <header>
-                <div><img src="image/hedder.PNG" class="content_jpg">
-                    <div class="content_line"></div>
-                    <div><img src="image/notty_logo.jpg" class="content_logo"></div>
-                    <h1 class="content_word">bus stop project</h1>
-                </div>
-            </header>
+            <div class="header" id="header">
+                <p class="header_content">busstop project</p>
+            </div>
+            <div><img src="image/hedder.PNG" class="content_jpg"></div>
+
             <main class="layout">
                 <point>
                     <p class="headline_a">ICTを活用した</br>
@@ -112,7 +111,6 @@
                     <img src="image/QR_453088.png" alt="" width="150" hright="150">
                     <a class="url" href = "https://docs.google.com/forms/d/e/1FAIpQLSdp_HjjaCJdaA2tRUgcKk-lLHKFD-U4Qbi6QYniiivazuhp1A/viewform?usp=sf_link"><img src="image/bus-south.png" alt=""></a>
                 </div>
-            </main>
         </inside>
         <footer id="footer">
             
@@ -130,5 +128,26 @@
                 </div>
                 <p class="loadingtext">Loading</p>    
             </div> -->
+
+            <a href="#"><button class="btn_top"><p class="btn_text"></p></button></a>
+
+        </main>
     </body>
+    <footer class="footer">
+        <ul class="footer_title">
+            <p>busstop project</p>
+        </ul>
+        <ul class="footer_bigtitle">
+            <li><a href="index.html" style="text-decoration: none;">TopPageへ</a></li>
+            <li><a href="https://nottydoko-demo.sodeproject.com/" style="text-decoration: none;">のっティバスどこ</a></li>
+        </ul>
+        <ul class="footer_smalltitle">
+            <li><a href="app.html" style="text-decoration: none;">アプリ開発</a></li>
+            <li><a href="web.html" style="text-decoration: none;">Web開発</a></li>
+            <li><a href="sensor.html" style="text-decoration: none;">センサネットワーク</a></li>
+            <li><a href="image.html" style="text-decoration: none;">画像処理</a></li>
+        </ul>
+    </footer>
+
+    <script src="web.js"></script>
 </html>
