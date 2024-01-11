@@ -128,6 +128,44 @@
 }
 
 
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2; /* オプション: 背景色を設定する */
+}
+
+.Twitter {
+  flex: 1; /* 利用可能なスペースを占有 */
+  margin-right: 10px; /* オプション: Twitterと他の要素の間にマージンを追加 */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex img {
+  max-width: 100%; /* 画像がコンテナを超えないようにする */
+  margin-right: 10px; /* オプション: 画像とテキストの間にマージンを追加 */
+}
+
+.right, .left {
+  flex: 1; /* 右と左のdivに均等な幅を設定 */
+}
+
+.title {
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF; /* オプション: リンクの色を設定 */
+}
+
 .flex { /*サイトに勧める*/
   display: flex;
   justify-content: center;
