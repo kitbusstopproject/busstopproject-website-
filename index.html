@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet"href="index.css">
-    <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,7 +16,28 @@
             <div class="header" id="header">
                 <p class="header_content">busstop project</p>
             </div>
-            <div><img src="image/hedder.PNG" class="content_jpg"></div>
+
+            <header>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                <div class="slider">
+                    <img src="https://media.istockphoto.com/id/686925882/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%BB%8A%E5%86%85.jpg?s=1024x1024&w=is&k=20&c=8QE8Y1sV8Kn_cBTg9Mx9ocdq8wZCiOn87WcJ7bsLC_o=" width="500" height="300" alt="">
+                    <img src="https://www.city.nonoichi.lg.jp/uploaded/image/20720.jpg" width="500" height="300" alt="">
+                    <img src="https://www.city.nonoichi.lg.jp/uploaded/image/38422.jpg" width="500" height="300" alt="">
+                    <img src="https://www.city.nonoichi.lg.jp/uploaded/image/38429.jpg" width="500" height="300" alt="">
+                    <img src="image/hedder.PNG" class="content_jpg">
+                 </div>
+                    <script type="text/javascript">
+                            $(document).ready(function(){
+                                $('.slider').bxSlider({
+                                    auto: true,
+                                    pause: 5000,
+                                });
+                            });
+                    </script>
+            </header>
+
             <main class="layout">
                 <point>
                     <p class="headline_a">ICTを活用した</br>
@@ -55,12 +75,11 @@
                 
                 <div class="link">
                     <div class="Twitter">
-                        <a class="twitter-timeline" data-width="500" data-height="450" href="https://twitter.com/kitbusstop?ref_src=twsrc%5Etfw">Tweets by kitbusstop</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        
-                    </div> 
+                        <a class="twitter-timeline" data-width="500" data-height="450"  href="https://twitter.com/kitbusstop?ref_src=twsrc%5Etfw">Tweets by kitbusstop</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                       </div> 
                     
                     <div class="flex">
-                        <img src="../portal-site/image/nottybus.jpg" alt="">
+                                            <img src="../portal-site/image/nottybus.jpg" alt="">
                         <div class="right">
                             <p class="title">【のっティバスどこのサイトは<a href="https://nottydoko-demo.sodeproject.com/">こちら</a>!!!】</p>
                         </div>
