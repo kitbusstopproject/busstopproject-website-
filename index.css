@@ -38,11 +38,10 @@
 .fixed-hide{
   top: -8.5rem;
 }
-.content_jpg{ /*ヘッダーの写真*/
+.slider{ /*ヘッダーの写真*/
   position: relative;
   width: 100%;
-  height: 60rem;
-  left: 0rem;
+  height: 6rem;
 }
 .content_line{ /*上部タグ部分*/
   position: absolute;
