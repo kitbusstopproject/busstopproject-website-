@@ -549,6 +549,10 @@
   font-size:7rem;
   color: #f58b78;
 }
+
+.introduce-img{
+  width:60rem;
+}
 .grid {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
