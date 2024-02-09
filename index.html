@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
@@ -8,22 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>busstop project</title>
+    
 </head>
 
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <inside>
             <div class="header" id="header">
-                <p class="header_content">busstop project</p>
+                <a class="header_content" href="index.html">busstop project</a>
+                 <div class="hamburger-menu" id="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="app.html">アプリ開発</a>
+                        </li>
+                        <li>
+                            <a href="web.html">web開発</a>
+                        </li>
+                        <li>
+                            <a href="image.html">画像処理</a>
+                        </li>
+                        <li>
+                            <a href="sensor.html">センサネットワーク</a>
+                        </li>
+                        <li>
+                            <a href="https://nottydoko-demo.sodeproject.com/">のっティバスどこ</a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
             </div>
 
-            <header>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+           <header>
+            <img class = "header_img" src="image/hedder.PNG" alt="">
+                <!---<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                <img class = "header_img" src="https://media.istockphoto.com/id/686925882/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%BB%8A%E5%86%85.jpg?s=1024x1024&w=is&k=20&c=8QE8Y1sV8Kn_cBTg9Mx9ocdq8wZCiOn87WcJ7bsLC_o=" alt="">
                 <div class="slider">
-                    <img src="https://media.istockphoto.com/id/686925882/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%BB%8A%E5%86%85.jpg?s=1024x1024&w=is&k=20&c=8QE8Y1sV8Kn_cBTg9Mx9ocdq8wZCiOn87WcJ7bsLC_o=" alt="">
                     <img src="https://www.city.nonoichi.lg.jp/uploaded/image/20720.jpg" alt="">
                     <img src="https://www.city.nonoichi.lg.jp/uploaded/image/38422.jpg" alt="">
                     <img src="https://www.city.nonoichi.lg.jp/uploaded/image/38429.jpg" alt="">
@@ -36,7 +64,7 @@
                                     pause: 5000,
                                 });
                             });
-                    </script>
+                    </script>-->
             </header>
 
             <main class="layout">
@@ -46,7 +74,57 @@
                     <p class="headline_b">野々市の市民サポート業務をICT、IoT技術を用いて</br>
                         効率化、市民サービス拡大を目的に活動しています</p>
                 </point>
-                <div class="title">活動実績</div>
+                <div class = "action">
+                    <div id="actionday"><p class="day">【活動日】</p>
+                    <p class="week">毎週水曜日　15:00~17:00<br>　　木曜日　17:00~19:00<br></p>
+                    <p class="place">【活動場所】</p>
+                    <p class="actionplace">lab2</p>
+                    </div>
+                    <div class="Twitter">
+                    <a class="twitter-timeline" data-width="500" data-height="450"  href="https://twitter.com/kitbusstop?ref_src=twsrc%5Etfw">Tweets by kitbusstop</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div> 
+                </div>
+                
+                <p class = "development">活動について</p>
+                <div class="row">
+                    <div class ="grid">
+                        <button class="appline"><a href="app.html" type="button" class="app_line">
+                        <p class = "apptitle">【アプリ開発】</p>
+                        <img class="app-img" src="../portal-site/image/Web_apuri_image.png" alt=""></a></button>
+                        
+                        <button class="webline"><a href="web.html" type="button" class="web_line">
+                            <p class="webtitle" >【Web開発】</p>
+                            <img class="web-img" src="../portal-site/image/Web_dev_image.png" alt=""></a></button>
+                        
+                    </div>
+                    <div class ="grid2">
+                        <button class="gazouline"><a href ="image.html" type="button" class="gazou_line">
+                            <p class = "gazoutitle">
+                                【画像処理】
+                            </p>
+                            <div class = "c"><img class="gazou-img" src="../portal-site/image/web_gazo_image.png" alt=""></div>
+                            <div class ="gazou"></a></button>
+                        </button>
+
+                        <button class="sensaline"><a href ="sensor.html" type="button" class="sensa_line">
+                            <p class = "sensatitle">【センサネットワーク】</p>
+                            <div class ="d"><img class="sensa-img"src = "../portal-site/image/web_sensa_image.png" alt=""></div>
+                            <div class = "sensa"></a></button>
+                        </div>
+                    </div>
+                    <button class="introduce"><a href ="image.html" type="button" class="gazou_line">
+                        <p class = "introducevideo">
+                            【紹介動画】
+                        </p>
+                        </a></button>
+                    </button>
+                </div>
+               
+               
+        </inside>
+
+        <a href="#"><button class="btn_top"><p class="btn_text"></p></button></a>
+        <div class="title">活動実績</div>
                 <div class="wrap"> 
                     <div class="box-a"><国際学会発表><br>
                         ・Masamichi Takakura, Takashi Furuta, Mikiko Sode Tanaka,<br>
@@ -73,93 +151,29 @@
                         ”電子情報通信学会 画像工学研究会, 2016/12/8-9.<br>
                     </div>
                 </div>
+
+
                 
-                <div class="link">
-                    <div class="Twitter">
-                        <a class="twitter-timeline" data-width="500" data-height="450"  href="https://twitter.com/kitbusstop?ref_src=twsrc%5Etfw">Tweets by kitbusstop</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                       </div> 
-                    
-                    <div class="flex">
-                                            <img src="../portal-site/image/nottybus.jpg" alt="">
-                        <div class="right">
-                            <p class="title">【のっティバスどこのサイトは<a href="https://nottydoko-demo.sodeproject.com/">こちら</a>!!!】</p>
-                        </div>
-                        <div class="left">
-                            <a href="https://play.google.com/store/apps/details?id=com.busstopprj.buslocationsystem&hl=ja-JP"><img src="image/google play.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class ="grid">
-                        <div class="app_line">
-                        <p class = "apptitle">【アプリ開発】</p>
-                        <div class ="a"><img class="app-img" src="../portal-site/image/Web_apuri_image.png" alt=""></div>
-                        <div class ="app"><a href ="app.html"><button class="appbotan" style ="background-color: aliceblue;"  ><p class = "word">クリック</p></button></a></div>
-                        </div>
-                        <div class="web_line">
-                            <p class="webtitle">【Web開発】</p>
-                            <div class ="b"><img class="web-img" src="../portal-site/image/Web_dev_image.png" alt=""></div>
-                            <div class ="web"><a href ="web.html"><button class="webbotan" style ="background-color: aliceblue;"><p class = "word">クリック</p></button></a></div>
-                        </div>
-                    </div>
-                    <div class ="grid2">
-                        <div class="gazou_line">
-                            <p class = "gazoutitle">
-                                【画像処理】
-                            </p>
-                            <div class = "c"><img class="gazou-img" src="../portal-site/image/web_gazo_image.png" alt=""></div>
-                            <div class ="gazou"><a href ="image.html"><button class="gazoubotan" style ="background-color: aliceblue;"><p class = "word">クリック</p></button></a></div>
-                        </div>
-                        <div class="sensa_line">
-                            <p class = "sensatitle">【センサネットワーク】</p>
-                            <div class ="d"><img class="sensa-img"src = "../portal-site/image/web_sensa_image.png" alt=""></div>
-                            <div class = "sensa"><a href ="sensor.html"><button class="sensabotan" style ="background-color: aliceblue;"><p class = "word">クリック</p></button></a></div>
-                        </div>
-                    </div>
-                </div>
-                <p class="day">【活動日】</p>
-                <p class="week">毎週水曜日　15:00~17:00<br>　　木曜日　17:00~19:00</p>
-                <div class="form">
-                    <p>　Busstopプロジェクトの説明を詳しく聞きたい方や参加したい方は下記のQRコード<br>または<img class="in_sentence" src="../portal-site/image/bus-south.png">をclick!</p>
-                    <img src="../portal-site/image/QR_453088.png" alt="" width="150" hright="150">
-                    <a class="url" href = "https://docs.google.com/forms/d/e/1FAIpQLSdp_HjjaCJdaA2tRUgcKk-lLHKFD-U4Qbi6QYniiivazuhp1A/viewform?usp=sf_link"><img src="../portal-site/image/bus-south.png" alt=""></a>
-                </div>
-        </inside>
-        <footer id="footer">
-            <div class="fotter_line">
-            </div>    
-        </footer>
-         <div id="loader_wrap">
-            <div class="loader"><script>
-                window.onload = function () {
-                const loader_element = document.getElementById('loader_wrap');
-                loader_element.classList.add('loaded');
-                };
-                </script>
-                </div>
-                <p class="loadingtext">Loading</p>    
-            </div> -->
-
-            <a href="#"><button class="btn_top"><p class="btn_text"></p></button></a>
-
         </main>
+        
     </body>
-    <footer class="footer">
-        <ul class="footer_title">
-            <p>busstop project</p>
-        </ul>
-        <ul class="footer_bigtitle">
-            <li><a href="index.html" style="text-decoration: none;">TopPageへ</a></li>
-            <li><a href="https://nottydoko-demo.sodeproject.com/" style="text-decoration: none;">のっティバスどこ</a></li>
-        </ul>
-        <ul class="footer_smalltitle">
-            <li><a href="app.html" style="text-decoration: none;">アプリ開発</a></li>
-            <li><a href="web.html" style="text-decoration: none;">Web開発</a></li>
-            <li><a href="sensor.html" style="text-decoration: none;">センサネットワーク</a></li>
-            <li><a href="image.html" style="text-decoration: none;">画像処理</a></li>
-        </ul>
-    </footer>
+    <div class="link">
+                   
+                    
+        <div class="flex">
+                                <img src="../portal-site/image/nottybus.jpg" alt="">
+            <div class="right">
+                <p class="title">【のっティバスどこのサイトは<a href="https://nottydoko-demo.sodeproject.com/">こちら</a>!!!】</p>
+            </div>
+            <div class="left">
+                <a href="https://play.google.com/store/apps/details?id=com.busstopprj.buslocationsystem&hl=ja-JP"><img src="image/google play.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <small class="kopi-raito">©bus stop project 2024</small>
+
+    </div>
 
     <script src="web.js"></script>
 </html>
