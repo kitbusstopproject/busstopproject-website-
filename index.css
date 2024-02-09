@@ -28,21 +28,116 @@
   display: flex;
 
   width: 100%;
-  height: 8rem;
+  height: 8.4rem;
   background-color: #E97575;
   transition: all 1s ease-out;
 }
 .header_content{
-  font-size: 5.8rem;
+  font-size: 4.8rem;
+  text-decoration: none;
+  color:#000000;
+}
+.menu-btn {
+  position:absolute; right:0;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 4rem;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
 }
 .fixed-hide{
   top: -8.5rem;
 }
-.slider{ /*ヘッダーの写真*/
-  position: relative;
-  width: 100%;
-  height: 6rem;
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
 }
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+#menu-btn-check {
+  display: none;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color:rgb(201, 93, 93);
+  transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+.header_img{ /*ヘッダーの写真*/
+  position: relative;
+  width: 222rem;
+  height: 70rem;
+}
+
 .content_line{ /*上部タグ部分*/
   position: absolute;
   width: 100%;
@@ -69,15 +164,15 @@
   width: 99%;
 
   padding: 0;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-
+  margin:3rem;
   color: #000000;
 }
 
 
 .title{
-  font-size:4rem;
+  font-size:rem;
 }
 .wrap {
   display: flex; /*--横並び指定--*/
@@ -150,6 +245,9 @@
   flex: 1; /* 利用可能なスペースを占有 */
   margin-right: 10px; /* オプション: Twitterと他の要素の間にマージンを追加 */
 }
+.twitter-timeline{
+  margin: auto;
+}
 
 .flex {
   display: flex;
@@ -166,15 +264,12 @@
 }
 
 .title {
-  font-size: 16px;
-  margin: 0;
+  font-weight:bold;
+  font-size:7rem;
+  text-align: center;
+  margin: 10rem;
+  color: #EA4E43;
 }
-
-a {
-  text-decoration: none;
-  color: #007BFF; /* オプション: リンクの色を設定 */
-}
-
 .flex { /*サイトに勧める*/
   display: flex;
   justify-content: center;
@@ -214,8 +309,23 @@ a {
   font-size:7rem;
   font-weight:bold;
   margin:30;
-  text-align:center;
+  text-align:left;
   color: mediumvioletred;
+
+}
+.place{
+  font-size:7rem;
+  font-weight:bold;
+  margin:30;
+  text-align:left;
+  color: mediumvioletred;
+}
+
+.actionplace{
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 30;
+  text-align: center;
 }
 .week{/*活動時間*/
   font-size: 6rem;
@@ -232,8 +342,6 @@ a {
 .form .url{
   word-break: break-word;
 }
-
-
 .btn_top
 {
   position: fixed;
@@ -242,7 +350,6 @@ a {
   width: 10rem;
   height: 10rem;
   background: orange;
-
   border-radius: 40%;
 
 }
@@ -252,6 +359,7 @@ a {
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   background-color: #000000;
   left: 2rem;
+  margin: auto;
 }
 
 
@@ -272,69 +380,95 @@ a {
 .form .in_sentence{
   width: 60px;
 }
-.a{
-  text-align: center;
-}
+
 .word{
   font-size:2rem;
   font-weight: bold;
 }
+.ap{
+  text-align: center;
+}
 .app-img{
   top:30em;
   left: 20rem; 
-  width: 35rem;
+  width: 55rem;
 }
 .app{
   text-align: right;
   margin:3rem;
 }
-.app_line{
+.appline{
   height: 60rem;
-  background: #E97575aa;
   display: flex;
   flex-flow: column;
-  
+  width:88rem;
+  margin:1rem;
+  border-radius: 20px;
+  align-items:center;
 }
+.app_line{
+  height: 60rem;
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  border-radius: 20px;
+  align-items:center;
+}
+
 .appbotan{
   position: relative;
   width:15rem;
   border-radius:50%;
   height:10rem;
 }
+.a{
+  text-align: center;
+}
 .apptitle{
   font-weight:bold;
   font-size:7rem;
-  text-decoration: underline;
+  color: #f7a727;
+}
+.development{
+  font-weight:bold;
+  font-size:7rem;
   text-align: center;
+  margin: 10rem;
+  color: #EA4E43;
 }
 
-.web{
-  text-align: right;
-  margin:3rem;
-}
+
 .b{
   text-align: center;
 }
 .web_line{
   height: 60rem;
-  background:skyblue;
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
+}
+.webline{
+  height: 60rem;
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
 }
 .web-img{
-  top:30em;
-  left: 20rem; 
-  width: 40rem;
+  width: 60rem;
 }
-.webbotan{
-  position: relative;
-  width: 15rem;
-  height:10rem;
-  border-radius:50%;
-}
+
 .webtitle{
   font-weight:bold;
   font-size:7rem;
-  text-decoration: underline;
-  text-align: center;
+  color: #3584bb;
+  
 }
 .c{
   text-align: center;
@@ -345,25 +479,31 @@ a {
 }
 .gazou_line{
   height: 60rem;
-  background:greenyellow;
-  
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
+}
+.gazouline{
+  height: 60rem;
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
 }
 .gazou-img{
-  top:30em;
-  left: 20rem; 
-  width: 29.5rem;
+  
+  width: 50rem;
 }
-.gazoubotan{
-  position: relative;
-  width: 15rem;
-  height:10rem;
-  border-radius:50%;
-}
+
 .gazoutitle{
   font-weight:bold;
   font-size:7rem;
-  text-decoration: underline;
-  text-align: center;
+  color: #9aeda1;
 }
 .d{
   text-align: center;
@@ -374,14 +514,25 @@ a {
 }
 .sensa_line{
   height: 60rem;
-  background:rgb(240, 142, 240);
   display: flex;
   flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
+}
+.sensaline{
+  height: 60rem;
+  display: flex;
+  flex-flow: column;
+  width:88rem;
+  margin:1rem;
+  align-items: center;
+  border-radius: 20px;
 }
 .sensa-img{
-  top:30em;
-  left: 20rem;
-  width: 40rem;
+  
+  width: 60rem;
 }
 .sensabotan{
   position: relative;
@@ -392,15 +543,33 @@ a {
 .sensatitle{
   font-weight:bold;
   font-size:7rem;
-  text-decoration: underline;
-  text-align: center;
+  color: #d777f0;
+  
+}
+
+.introduce{
+  height: 60rem;
+  flex-flow: column;
+  width:88rem;
+  align-items: center;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  
+  
+}
+.introducevideo{
+  font-weight:bold;
+  font-size:7rem;
+  color: #f58b78;
 }
 .grid {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  
 }
 .grid2{
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
 
@@ -421,24 +590,52 @@ ul{
       text-align: center;
       display: flex;
 }
-a,a:hover,a:visited{
-  color: inherit;
-}
+
 li{
   margin-top: 2rem;
 }
 .footer_title{
   font-size: 6rem;
   width: 33%;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .footer_bigtitle{
   font-size: 4rem;
   width: 33%;
   margin-top: 5rem;
+  
+
 }
 .footer_smalltitle{
   font-size: 3rem;
   width: 33%;
   margin-top: 5rem;
+}
+.fotterlink{
+  color: #000000;
+}
+.fotterbig{
+  color: #000000;
+}
+.copylight{
+  bottom: 0%;
+}
+.action{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+.ac{
+  text-align: center;
+  font-size: 20rem;
+}
+
+.kopi-raito{
+  font-size: 5rem;
+  
+}
+#footer{
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
 }

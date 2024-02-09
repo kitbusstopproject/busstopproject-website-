@@ -33,7 +33,9 @@
 }
 .header_content{
   font-size: 5.8rem;
+  text-decoration: none;
 }
+
 .fixed-hide{
   top: -8.5rem;
 }

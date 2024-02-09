@@ -1,4 +1,5 @@
 const fixedElm = document.getElementById('header');
+const fixedEm = document.getElementById('hamburger-menu');
 let scrollPoint = 0; // 現在のスクロール位置をセットする変数
 let lastPoint = 0; // 1つ前のスクロール位置をセットする変数
 
