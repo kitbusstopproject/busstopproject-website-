@@ -559,6 +559,13 @@
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
 
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+
+
 ul{
   list-style: none;
 }
