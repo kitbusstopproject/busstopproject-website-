@@ -232,14 +232,7 @@
 }
 
 
-.link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f2f2f2; /* オプション: 背景色を設定する */
-}
+
 
 .Twitter {
   flex: 1; /* 利用可能なスペースを占有 */
@@ -249,19 +242,7 @@
   margin: auto;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-}
 
-.flex img {
-  max-width: 100%; /* 画像がコンテナを超えないようにする */
-  margin-right: 10px; /* オプション: 画像とテキストの間にマージンを追加 */
-}
-
-.right, .left {
-  flex: 1; /* 右と左のdivに均等な幅を設定 */
-}
 
 .title {
   font-weight:bold;
@@ -405,6 +386,7 @@
   margin:1rem;
   border-radius: 20px;
   align-items:center;
+  margin: 0 auto;
 }
 .app_line{
   height: 60rem;
@@ -450,6 +432,7 @@
   margin:1rem;
   align-items: center;
   border-radius: 20px;
+
 }
 .webline{
   height: 60rem;
@@ -459,6 +442,7 @@
   margin:1rem;
   align-items: center;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .web-img{
   width: 60rem;
@@ -494,6 +478,7 @@
   margin:1rem;
   align-items: center;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .gazou-img{
   
@@ -529,6 +514,7 @@
   margin:1rem;
   align-items: center;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .sensa-img{
   
@@ -631,4 +617,34 @@ li{
   height: 100px;
   margin: 0 auto;
   text-align: center;
+}
+.link{
+  font-weight:bold;
+  font-size:7rem;
+  text-align: center;
+  margin: 10rem;
+  color: #EA4E43;
+}
+.basudoko{
+  border: solid;
+  margin:4rem;
+  background-color: #ebeced;
+  border-radius: 20px;
+}
+.appp{
+  width: 100rem;
+}
+.appppp{
+  width:30rem;
+  text-align: left;
+  margin: 10rem;
+}
+
+.GooglePlay{
+  width:40rem;
+  margin:5rem;
+}
+
+.basswheresystem{
+  font-size: 5rem;
 }
