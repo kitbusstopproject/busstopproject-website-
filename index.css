@@ -254,7 +254,7 @@
   align-items: center;
 }
 
-.flex img {
+.flex .right {
   max-width: 100%; /* 画像がコンテナを超えないようにする */
   margin-right: 10px; /* オプション: 画像とテキストの間にマージンを追加 */
 }
@@ -572,6 +572,13 @@
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
 }
+
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+
 
 ul{
   list-style: none;
